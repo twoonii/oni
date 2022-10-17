@@ -1,5 +1,11 @@
 # @twooni-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- New component: BOX
+
 ## 3.0.0
 
 ### Major Changes
