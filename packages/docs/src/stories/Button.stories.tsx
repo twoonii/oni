@@ -1,9 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonProps } from '@twooni-ui/react'
+import {
+  Button,
+  ButtonProps,
+  LeftAdornment,
+  RightAdornment,
+} from '@twooni-ui/react'
+import { RiHomeLine } from 'react-icons/ri'
 
 export default {
   type: 'Button',
   component: Button,
+  subcomponents: { LeftAdornment, RightAdornment },
   args: {
     children: 'Button CTA',
     variant: 'primary',
@@ -36,8 +43,17 @@ export const PrimaryGray: StoryObj = {
     variant: 'primary-gray',
   },
 }
-export const Tertiary: StoryObj = {
-  args: {
-    variant: 'tertiary-gray',
-  },
+export const PrimaryWithLeftIcon: StoryObj = {
+  args: { variant: 'primary-gray' },
+  render: (args) => (
+    <Button {...args}>
+      <LeftAdornment>
+        <RiHomeLine />
+      </LeftAdornment>
+      opa
+      <RightAdornment>
+        <RiHomeLine />
+      </RightAdornment>
+    </Button>
+  ),
 }

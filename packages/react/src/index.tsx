@@ -6,7 +6,7 @@ export const Button = styled('button', {
   fontWeight: '600',
   borderRadius: '$md',
   fontSize: '$md',
-  padding: '$2 $4',
+  padding: '$4 $5',
   color: 'white',
   lineHeight: '$md',
   height: '$8',
@@ -136,10 +136,12 @@ export const Button = styled('button', {
 export const LeftAdornment = styled('div', {
   width: '$5',
   height: '$5',
+  paddingRight: '$2',
 })
 export const RightAdornment = styled('div', {
   width: '$5',
   height: '$5',
+  paddingLeft: '$2',
 })
 
 export type LeftAdornmentProps = ComponentProps<typeof LeftAdornment>
