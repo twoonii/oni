@@ -1,7 +1,7 @@
-import React, { ComponentProps, ReactNode } from 'react'
+import { ComponentProps } from 'react'
 import { styled } from './styles'
 
-const ButtonStyled = styled('button', {
+export const Button = styled('button', {
   fontFamily: '$default',
   fontWeight: '600',
   borderRadius: '$md',
@@ -133,25 +133,16 @@ const ButtonStyled = styled('button', {
   },
 })
 
-const LeftAdornment = styled('div', {
+export const LeftAdornment = styled('div', {
   width: '$5',
   height: '$5',
-  // background: '$error100',
 })
-const RightAdornment = styled('div', {
+export const RightAdornment = styled('div', {
   width: '$5',
   height: '$5',
-  // background: '$error100',
 })
 
-export type ButtonProps = ComponentProps<typeof ButtonStyled>
-export const Button: React.FC<ButtonProps> = (props) => {
-  return (
-    <ButtonStyled {...props}>
-      <LeftAdornment />
-      {props.children}
-      <RightAdornment />
-    </ButtonStyled>
-  )
-}
+export type LeftAdornmentProps = ComponentProps<typeof LeftAdornment>
+export type RightAdornmentProps = ComponentProps<typeof RightAdornment>
+export type ButtonProps = ComponentProps<typeof Button>
 Button.displayName = 'Button'
