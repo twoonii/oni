@@ -1,0 +1,4 @@
+{
+  "extends": "@twooni-ui/ts-config/react.json",
+  "include": ["src"],
+}
