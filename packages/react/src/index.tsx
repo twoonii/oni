@@ -72,7 +72,7 @@ const ButtonStyled = styled('button', {
       'tertiary-gray': {
         background: 'white',
         border: '1px solid',
-        borderColor: 'white',
+        borderColor: '#fff',
         boxShadow: 'none',
         color: '$gray600',
         '&:hover': {
