@@ -1,5 +1,11 @@
 # @twooni-ui/react
 
+## 4.0.1
+
+### Patch Changes
+
+- 0b76339: Removing the width and the height prop from box
+
 ## 4.0.0
 
 ### Major Changes
