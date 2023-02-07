@@ -1,5 +1,11 @@
 # @twooni-ui/react
 
+## 4.0.2
+
+### Patch Changes
+
+- 7389fef: Removing background color of box
+
 ## 4.0.1
 
 ### Patch Changes
