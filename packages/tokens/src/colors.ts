@@ -121,4 +121,6 @@ export const colors = {
   success700: '#027948',
   success800: '#05603A',
   success900: '#054F31',
+
+  test: '#fff',
 }
